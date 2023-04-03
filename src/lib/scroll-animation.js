@@ -4,9 +4,9 @@ export const scrollAnimation = (position,target,onUpdate) => {
     const tl = gsap.timeline()
 
     tl.to(position, {
-      x: -3.38,
-      y: -10.74,
-      z: -5.93,
+      x: -5.3,
+      y: -13.2385,
+      z: -2.18441,
       scrollTrigger: {
         trigger: ".sound-section",
         start: "top bottom",
@@ -14,11 +14,10 @@ export const scrollAnimation = (position,target,onUpdate) => {
         scrub: 2,
         immediateRender: false,
       },
-      onUpdate,
     }).to(target, {
-      x: 1.52,
-      y: 0.77,
-      z: -1.08,
+      x: -0.37520,
+      y: 0.134524,
+      z: -0.20900,
       scrollTrigger: {
         trigger: ".sound-section",
         start: "top bottom",

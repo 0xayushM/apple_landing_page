@@ -59,7 +59,7 @@ const memoizedScrollAnimation = useCallback((position, target, onUpdate) => {
 
     viewer.renderer.refreshPipeline();
 
-    await manager.addFromPath("scene.glb");
+    await manager.addFromPath("scene-black.glb");
 
     viewer.getPlugin(TonemapPlugin).config.clipBackground = true;
     viewer.scene.activeCamera.setCameraOptions({controlsEnabled:false})
@@ -79,6 +79,7 @@ const memoizedScrollAnimation = useCallback((position, target, onUpdate) => {
             needsUpdate = false
         }
     })
+      console.log(position, target, onUpdate);
 
     memoizedScrollAnimation(position,target,onUpdate)
 
