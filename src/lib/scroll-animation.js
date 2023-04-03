@@ -14,6 +14,7 @@ export const scrollAnimation = (position,target,onUpdate) => {
         scrub: 2,
         immediateRender: false,
       },
+      onUpdate,
     }).to(target, {
       x: 1.2446004341,
       y: -0.5323025354,
