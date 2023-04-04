@@ -33,6 +33,8 @@ function WebgiViewer() {
   
   const memoizedScrollAnimation = useCallback((position, target, onUpdate) => {
     if(position && target && onUpdate) {
+      console.log(position, target, onUpdate);
+
         scrollAnimation(position,target,onUpdate)
     }
   },[])
@@ -84,11 +86,6 @@ function WebgiViewer() {
 
 
     memoizedScrollAnimation(position,target,onUpdate);
-    // memoizedScrollAnimation(
-    //   { x: -10.3534829845, y: 3.3011919392, z: 9.7285437247 },
-    //   { x: 0.6370395979, y: 1.3204268197, z: 0.6561640364 },
-    //   onUpdate
-    // );
 
   },[])
 
