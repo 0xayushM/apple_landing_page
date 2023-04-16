@@ -5,7 +5,7 @@ function SoundSection() {
     const handleLearnMore = () => {
       const element = document.querySelector('.display-section')
       window.scrollTo({
-        top: element?.getBoundingClientRect().bottom,
+        top: element?.getBoundingClientRect().top,
         left:0,
         behavior: "smooth",
 

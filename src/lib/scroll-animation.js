@@ -27,6 +27,7 @@ export const scrollAnimation = (position,target,onUpdate) => {
           scrub: 2,
           immediateRender: false,
         },
+        onUpdate,
       })
       .to(".jumbotron-section", {
         opacity: 0,
